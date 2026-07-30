@@ -1,0 +1,656 @@
+/*==================================================
+                ESTILOS GENERALES
+===================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+/*===================== NAVBAR =====================*/
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:999;
+}
+
+.navbar{
+    background:#0d47a1;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:white;
+}
+
+.logo i{
+    font-size:28px;
+    color:#ffd54f;
+}
+
+.logo h2{
+    font-size:28px;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.navbar ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:.3s;
+}
+
+.navbar ul li a:hover{
+    color:#ffd54f;
+}
+
+/*===================== HERO =====================*/
+
+.hero{
+    height:100vh;
+    background:url("https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=1600") center/cover;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.60);
+}
+
+.contenidoHero{
+    position:relative;
+    z-index:2;
+    color:white;
+    max-width:750px;
+    padding:20px;
+}
+
+.contenidoHero h1{
+    font-size:58px;
+    margin-bottom:20px;
+}
+
+.contenidoHero p{
+    font-size:20px;
+    margin-bottom:35px;
+}
+
+.contenidoHero button{
+    padding:15px 40px;
+    border:none;
+    border-radius:40px;
+    background:#ff9800;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.4s;
+}
+
+.contenidoHero button:hover{
+    transform:translateY(-5px);
+    background:#fb8c00;
+}
+
+/*===================== TITULOS =====================*/
+
+.titulo{
+    text-align:center;
+    font-size:38px;
+    margin:70px 0 40px;
+    color:#0d47a1;
+}
+
+/*===================== TARJETAS =====================*/
+
+.cards{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.12);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 35px rgba(0,0,0,.20);
+}
+
+.card i{
+    font-size:45px;
+    color:#1565c0;
+    margin-bottom:18px;
+}
+
+.card h3{
+    margin-bottom:12px;
+    color:#0d47a1;
+}
+
+/*===================== PRODUCTOS =====================*/
+
+.productos{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.producto{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.producto:hover{
+    transform:scale(1.03);
+}
+
+.producto img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.producto h3{
+    padding:15px;
+    color:#0d47a1;
+}
+
+.producto p{
+    padding:0 15px;
+}
+
+.producto span{
+    display:block;
+    padding:15px;
+    color:#2e7d32;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.producto button{
+    width:100%;
+    padding:15px;
+    border:none;
+    background:#1565c0;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.producto button:hover{
+    background:#0d47a1;
+}
+
+/*===================== CATEGORIAS =====================*/
+
+.categorias{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.categoria{
+    background:white;
+    text-align:center;
+    padding:35px;
+    border-radius:15px;
+    transition:.4s;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+.categoria:hover{
+    transform:translateY(-8px);
+}
+
+.categoria i{
+    font-size:45px;
+    color:#ff9800;
+    margin-bottom:15px;
+}
+
+/*===================== CRUD =====================*/
+
+#crud{
+    width:90%;
+    margin:auto;
+}
+
+form{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+    margin-bottom:25px;
+}
+
+form input,
+form textarea{
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+}
+
+form input:focus,
+form textarea:focus{
+    border:1px solid #1565c0;
+}
+
+form button{
+    background:#2e7d32;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+form button:hover{
+    background:#1b5e20;
+}
+
+#buscar{
+    width:100%;
+    margin-bottom:20px;
+    padding:15px;
+    border-radius:10px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 10px 20px rgba(0,0,0,.12);
+}
+
+thead{
+    background:#1565c0;
+    color:white;
+}
+
+th,td{
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+tbody tr:hover{
+    background:#f1f1f1;
+}
+/*==================================================
+                BOTONES DE ACCIONES
+===================================================*/
+
+.editar{
+    background:#f9a825;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-right:5px;
+    transition:.3s;
+}
+
+.editar:hover{
+    background:#f57f17;
+    transform:scale(1.05);
+}
+
+.eliminar{
+    background:#d32f2f;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.eliminar:hover{
+    background:#b71c1c;
+    transform:scale(1.05);
+}
+
+/*==================================================
+                TESTIMONIOS
+===================================================*/
+
+.testimonios{
+    width:100%;
+    padding:70px 0;
+    background:#eef4fb;
+}
+
+/*==================================================
+                CONTACTO
+===================================================*/
+
+#contacto{
+    width:90%;
+    margin:70px auto;
+}
+
+.contacto{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    margin-top:30px;
+}
+
+.contacto div{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.12);
+}
+
+.contacto div h3{
+    color:#0d47a1;
+    margin-bottom:20px;
+}
+
+.contacto div p{
+    margin-bottom:15px;
+    font-size:17px;
+}
+
+.contacto form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.12);
+}
+
+.contacto textarea{
+    resize:none;
+    height:150px;
+}
+
+.contacto button{
+    background:#1565c0;
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+    font-size:16px;
+}
+
+.contacto button:hover{
+    background:#0d47a1;
+}
+
+iframe{
+    width:100%;
+    height:400px;
+    border:none;
+    border-radius:15px;
+    margin-top:35px;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+/*==================================================
+                FOOTER
+===================================================*/
+
+footer{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+    margin-top:60px;
+}
+
+footer h3{
+    margin-bottom:10px;
+    font-size:24px;
+}
+
+footer p{
+    opacity:.9;
+}
+
+/*==================================================
+                ANIMACIONES
+===================================================*/
+
+@keyframes aparecer{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+.card,
+.producto,
+.categoria,
+table,
+.contacto div,
+.contacto form{
+    animation:aparecer .8s ease;
+}
+
+/*==================================================
+                SCROLL PERSONALIZADO
+===================================================*/
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#e0e0e0;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#1565c0;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#0d47a1;
+}
+
+/*==================================================
+                RESPONSIVE TABLET
+===================================================*/
+
+@media(max-width:992px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+        padding:20px;
+    }
+
+    .navbar ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .contenidoHero h1{
+        font-size:42px;
+    }
+
+    .contenidoHero p{
+        font-size:18px;
+    }
+
+    .contacto{
+        grid-template-columns:1fr;
+    }
+
+    table{
+        display:block;
+        overflow-x:auto;
+    }
+
+}
+
+/*==================================================
+                RESPONSIVE CELULAR
+===================================================*/
+
+@media(max-width:768px){
+
+    .hero{
+        height:85vh;
+    }
+
+    .contenidoHero h1{
+        font-size:34px;
+    }
+
+    .contenidoHero p{
+        font-size:16px;
+    }
+
+    .titulo{
+        font-size:30px;
+    }
+
+    .cards,
+    .productos,
+    .categorias{
+        grid-template-columns:1fr;
+    }
+
+    form{
+        grid-template-columns:1fr;
+    }
+
+    .navbar ul{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    th,
+    td{
+        font-size:14px;
+        padding:10px;
+    }
+
+    footer h3{
+        font-size:20px;
+    }
+
+}
+
+/*==================================================
+                RESPONSIVE MÓVILES PEQUEÑOS
+===================================================*/
+
+@media(max-width:480px){
+
+    .contenidoHero h1{
+        font-size:28px;
+    }
+
+    .contenidoHero button{
+        width:100%;
+    }
+
+    .logo h2{
+        font-size:22px;
+    }
+
+    .logo i{
+        font-size:22px;
+    }
+
+    .navbar{
+        padding:15px;
+    }
+
+    .card,
+    .producto,
+    .categoria{
+        padding:20px;
+    }
+
+} 
+.estadisticas{
+    margin-top:30px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.estadistica{
+    background:#ffffff;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 8px 15px rgba(0,0,0,.15);
+}
+
+.estadistica h3{
+    color:#0d47a1;
+    margin-bottom:10px;
+}
+
+.estadistica p{
+    font-size:28px;
+    font-weight:bold;
+    color:#2e7d32;
+}

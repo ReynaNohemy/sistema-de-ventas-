@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistema de Ventas | Economía y Negocios</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <h2>SistemaVentas</h2>
+
+            </div>
+
+            <ul>
+
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#categorias">Categorías</a></li>
+                <li><a href="#crud">Sistema</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section id="inicio" class="hero">
+
+        <div class="overlay"></div>
+
+        <div class="contenidoHero">
+
+            <h1>Sistema Profesional de Ventas</h1>
+
+            <p>
+
+                Gestiona clientes, productos y ventas desde un solo lugar.
+
+                Plataforma diseñada para pequeños y medianos negocios en
+
+                San Salvador, Mejicanos.
+
+            </p>
+
+            <a href="#crud">
+
+                <button>
+
+                    Comenzar
+
+                </button>
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SERVICIOS ================= -->
+
+    <section id="servicios">
+
+        <h2 class="titulo">
+
+            Nuestros Servicios
+
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <i class="fa-solid fa-box"></i>
+
+                <h3>Productos</h3>
+
+                <p>Registro y administración completa.</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-users"></i>
+
+                <h3>Clientes</h3>
+
+                <p>Base de clientes organizada.</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-cash-register"></i>
+
+                <h3>Ventas</h3>
+
+                <p>Registro de todas las ventas.</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-chart-column"></i>
+
+                <h3>Reportes</h3>
+
+                <p>Visualización rápida de estadísticas.</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-database"></i>
+
+                <h3>LocalStorage</h3>
+
+                <p>Información almacenada localmente.</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <h3>Seguridad</h3>
+
+                <p>Validación de formularios.</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-mobile-screen"></i>
+
+                <h3>Responsive</h3>
+
+                <p>Compatible con cualquier dispositivo.</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-headset"></i>
+
+                <h3>Soporte</h3>
+
+                <p>Interfaz intuitiva y sencilla.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PRODUCTOS ================= -->
+
+    <section id="productos">
+
+        <h2 class="titulo">
+
+            Productos Destacados
+
+        </h2>
+
+        <div class="productos">
+
+            <div class="producto">
+
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600" alt="Producto">
+
+                <h3>Laptop Empresarial</h3>
+
+                <p>Ideal para oficina.</p>
+
+                <span>$750</span>
+
+                <button>Comprar</button>
+
+            </div>
+
+            <div class="producto">
+
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600" alt="Producto">
+
+                <h3>Smartphone</h3>
+
+                <p>Excelente rendimiento.</p>
+
+                <span>$450</span>
+
+                <button>Comprar</button>
+
+            </div>
+
+            <div class="producto">
+
+                <img src="https://images.unsplash.com/photo-1585386959984-a41552231658?w=600" alt="Producto">
+
+                <h3>Impresora</h3>
+
+                <p>Alta calidad.</p>
+
+                <span>$210</span>
+
+                <button>Comprar</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CATEGORIAS ================= -->
+
+    <section id="categorias">
+
+        <h2 class="titulo">
+
+            Categorías
+
+        </h2>
+
+        <div class="categorias">
+
+            <div class="categoria">
+
+                <i class="fa-solid fa-laptop"></i>
+
+                <h3>Tecnología</h3>
+
+            </div>
+
+            <div class="categoria">
+
+                <i class="fa-solid fa-print"></i>
+
+                <h3>Oficina</h3>
+
+            </div>
+
+            <div class="categoria">
+
+                <i class="fa-solid fa-mobile"></i>
+
+                <h3>Celulares</h3>
+
+            </div>
+
+            <div class="categoria">
+
+                <i class="fa-solid fa-computer"></i>
+
+                <h3>Accesorios</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CRUD ================= -->
+
+    <section id="crud">
+
+        <h2 class="titulo">
+
+            Registro de Productos
+
+        </h2>
+
+        <form id="formulario">
+
+            <input type="hidden" id="indice">
+
+            <input
+                type="text"
+                id="nombre"
+                placeholder="Nombre del producto">
+
+            <input
+                type="number"
+                id="precio"
+                placeholder="Precio">
+
+            <input
+                type="number"
+                id="cantidad"
+                placeholder="Cantidad">
+
+            <button type="submit">
+
+                Guardar
+
+            </button>
+
+        </form>
+
+        <input
+            type="text"
+            id="buscar"
+            placeholder="Buscar producto...">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Producto</th>
+
+                    <th>Precio</th>
+
+                    <th>Cantidad</th>
+
+                    <th>Acciones</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="tablaProductos">
+
+            </tbody>
+
+        </table>
+        <div id="estadisticas" class="estadisticas"></div>
+
+         <button onclick="limpiarInventario()">
+           Limpiar Inventario
+         </button>
+
+    </section>
+
+    <!-- ================= TESTIMONIOS ================= -->
+
+    <section class="testimonios">
+
+        <h2 class="titulo">
+
+            Testimonios
+
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                ⭐⭐⭐⭐⭐
+
+                <p>
+
+                    Excelente sistema para controlar ventas.
+
+                </p>
+
+                <strong>
+
+                    Carlos Hernández
+
+                </strong>
+
+            </div>
+
+            <div class="card">
+
+                ⭐⭐⭐⭐⭐
+
+                <p>
+
+                    Muy intuitivo y rápido.
+
+                </p>
+
+                <strong>
+
+                    María López
+
+                </strong>
+
+            </div>
+
+            <div class="card">
+
+                ⭐⭐⭐⭐⭐
+
+                <p>
+
+                    Lo utilizamos todos los días.
+
+                </p>
+
+                <strong>
+
+                    José Martínez
+
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACTO ================= -->
+
+    <section id="contacto">
+
+        <h2 class="titulo">
+
+            Contáctanos
+
+        </h2>
+
+        <div class="contacto">
+
+            <div>
+
+                <h3>Información</h3>
+
+                <p>
+
+                    📍 Mejicanos, San Salvador
+
+                </p>
+
+                <p>
+
+                    📞 +503 2222-2222
+
+                </p>
+
+                <p>
+
+                    ✉ contacto@sistemaventas.com
+
+                </p>
+
+                <p>
+
+                    Lunes a Viernes
+
+                    8:00 AM - 5:00 PM
+
+                </p>
+
+            </div>
+
+            <form>
+
+                <input type="text" placeholder="Nombre">
+
+                <input type="email" placeholder="Correo">
+
+                <textarea placeholder="Mensaje"></textarea>
+
+                <button>
+
+                    Enviar
+
+                </button>
+
+            </form>
+
+        </div>
+
+        <iframe
+            src="https://www.google.com/maps?q=Mejicanos,San%20Salvador&output=embed"
+            loading="lazy">
+        </iframe>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>
+
+            Sistema de Ventas © 2026
+
+        </h3>
+
+        <p>
+
+            Desarrollado con HTML5, CSS3 y JavaScript.
+
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

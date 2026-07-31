@@ -11,6 +11,7 @@ const formulario = document.getElementById("formulario");
 const tabla = document.getElementById("tablaProductos");
 const buscar = document.getElementById("buscar");
 
+
 const txtNombre = document.getElementById("nombre");
 const txtPrecio = document.getElementById("precio");
 const txtCantidad = document.getElementById("cantidad");
